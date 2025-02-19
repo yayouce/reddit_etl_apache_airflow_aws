@@ -1,0 +1,31 @@
+netstat -ano | findstr :[le port]        = voir le pid du processus qui utilise un port
+tasklist | findstr 5496                  = Identifier quel programme 
+
+docker-compose run --rm airflow-init airflow db init  
+
+
+
+La commande pip freeze > requirements.txt est utilisée pour générer un fichier requirements.txt contenant une liste de toutes les dépendances Python installées dans votre environnement virtuel, ainsi que leurs versions exactes.
+
+
+
+
+sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+Elle trouve le chemin absolu du fichier actuellement exécuté avec os.path.abspath(__file__).
+Elle remonte deux niveaux dans la hiérarchie des répertoires (deux os.path.dirname).
+Elle insère ce répertoire à la première position de sys.path.
+
+
+
+PythonOperator : Un opérateur d'Airflow qui permet d'exécuter une fonction Python dans un DAG.
+        taskid=====>Identifie la tâche sous ce nom unique dans le DAG.
+        python_callable====>Spécifie que la fonction Python "...." sera exécutée.
+        op_kwargs=====>Un dictionnaire contenant des arguments qui seront passés
+
+
+        "subreddit": 'dataengineering' → Extrait des posts du subreddit r/dataengineering.
+        "time_filter": 'day' → Récupère les posts des dernières 24 heures.
+        'limit': 100 → Limite le nombre de posts extraits à 100.
+
+

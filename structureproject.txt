@@ -1,0 +1,1 @@
+mkdir config dags data etls logs pipelines tests utils
